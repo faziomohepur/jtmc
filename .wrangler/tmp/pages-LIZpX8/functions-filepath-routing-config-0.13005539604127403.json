@@ -1,0 +1,13 @@
+{
+  "routes": [
+    {
+      "routePath": "/gui-mail",
+      "mountPath": "/",
+      "method": "POST",
+      "module": [
+        "gui-mail.js:onRequestPost"
+      ]
+    }
+  ],
+  "baseURL": "/"
+}

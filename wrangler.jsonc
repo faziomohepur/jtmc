@@ -9,7 +9,7 @@
 	},
 	"upload_source_maps": true,
 	"assets": {
-		"directory": "./dist",
+		"directory": ".",
 		"not_found_handling": "single-page-application"
 	},
 	"scripts": {
@@ -20,13 +20,4 @@
 	"devDependencies": {
 		"wrangler": "^3.101.0"
 	},
-	"kv_namespaces": [
-    {
-      "binding": "KV",
-      "id": "6efc9fb5cf5a4184b1fa40c4b760f1ec",
-      
-      // Optional: preview_id used when running `wrangler dev` for local dev
-      "preview_id": "<ID_OF_PREVIEW_KV_NAMESPACE_FOR_LOCAL_DEVELOPMENT>"
-    }
-  ]
 }

@@ -6,7 +6,7 @@ export async function onRequestPost(context) {
     const tenKhach = formData.get('Ten_Khach_Hang');
     const soDienThoai = formData.get('So_Dien_Thoai');
     const loTrinh = formData.get('Lo_Trinh');
-    const thoiGian = formD ata.get('Thoi_Gian_Don');
+    const thoiGian = formData.get('Thoi_Gian_Don');
 
     // Lấy API Key bí mật được lưu trong cấu hình Cloudflare Pages
     const RESEND_API_KEY = context.env.RESEND_API_KEY;
