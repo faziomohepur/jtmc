@@ -11,15 +11,15 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>DỊCH VỤ XE 4-7C RẠCH GIÁ | DỊCH VỤ ĐƯA ĐÓN NỘI THÀNH | DỊCH VỤ HỢP ĐỒNG XE DU LỊCH LIÊN HỆ HOTLINE: 0775 856 456</title>
-<meta name="description" content="Xe 4 Chổ - 7 Chổ Rạch Giá - Dịch vụ đưa đón sân bay, bến tàu Phú Quốc, du lịch giá rẻ, hợp đồng cưới hỏi, sự kiện tại Rạch Giá, An Giang. Hotline/Zalo 0775 856 456.">
-<meta name="KeyWords" content="xe dịch vụ, xe hợp đồng, dịch vụ đưa đón sân bay, bến xe rạch sỏi, bến tàu cao tốc rạch giá, rạch giá đi cần thơ, rạch giá đi sài gòn, rạch giá đi cà mau, rạch giá đi bến tre">
+<title>DỊCH VỤ DU LỊCH 4-7 CHỔ RẠCH GIÁ | HỢP ĐỒNG XE DU LỊCH LIÊN HỆ HOTLINE: 0775 856 456</title>
+<meta name="description" content="Xe 4 Chổ - 7 Chổ Rạch Giá - Dịch vụ đưa đón sân bay, bến tàu Phú Quốc, du lịch gia đình, hợp đồng cưới hỏi, sự kiện tại Rạch Giá, An Giang. Hotline/Zalo 0775 856 456.">
+<meta name="KeyWords" content="xe dịch vụ, xe hợp đồng, dịch vụ đưa đón sân bay, bến xe rạch sỏi, bến tàu cao tốc rạch giá, rạch giá đi cần thơ, rạch giá đi sài gòn, rạch giá đi cà mau, rạch giá đi bến tre, taxi rạch giá">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2220%22 fill=%22%230e9f6e%22/><text x=%2250%22 y=%2262%22 font-size=%2244%22 font-family=%22Arial,sans-serif%22 font-weight=%22bold%22 fill=%22white%22 text-anchor=%22middle%22>TmC</text></svg>">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
-<script async src={`https://www.google.com/recaptcha/api.js?render=${GOOGLE_CAPTCHA_KEY}`}></script>
+<script src="https://www.google.com/recaptcha/enterprise.js?render=6LcaHtAtAAAAAFCQZ4Jo_GWXJIfx_bFd-0n5Z9CT"></script>
 </head>
 <body>
 <!-- Sticky call bar (mobile) -->
@@ -377,6 +377,8 @@ hs.src = ('//s10.histats.com/js15_as.js');
     </div>
   </section>
 
+
+
   <!-- CONTACT -->
   <section class="section contact" id="lien-he">
     <div class="container contact__grid">
@@ -405,27 +407,27 @@ hs.src = ('//s10.histats.com/js15_as.js');
           </div>
         </div>
       </div>
-      <form class="contact__form" id="booking-form" data-netlify="true" netlify-honeypot="bot-field" name="dat-xe" method="POST">
+      <form class="contact__form" id="booking-form" action="./functions/gui-mail.js" method="POST" name="dat-xe">
         <input type="hidden" name="form-name" value="dat-xe">
-        <p class="visually-hidden"><label>Bỏ qua trường này: <input name="bot-field"></label></p>
         <h3>Gửi yêu cầu đặt xe</h3>
         <div class="form-row">
           <label for="name">Họ và tên</label>
-          <input type="text" id="name" name="name" required placeholder="Nguyễn Văn A">
+          <input type="text" id="name" name="name" placeholder="Tên của bạn" required">
         </div>
         <div class="form-row">
           <label for="phone">Số điện thoại</label>
-          <input type="tel" id="phone" name="phone" required placeholder="09xx xxx xxx">
+          <input type="tel" id="phone" name="phone" placeholder="Số điện thoại (bắt buột)" required">
         </div>
         <div class="form-row">
           <label for="route">Điểm đón - điểm đến</label>
-          <input type="text" id="route" name="route" placeholder="VD: Sân bay Rạch Giá - Trung tâm thành phố">
+          <input type="text" id="route" name="route" placeholder="Ví dụ: rạch sỏi - bến tàu rạch giá..." required">
         </div>
         <div class="form-row">
           <label for="note">Ghi chú</label>
-          <textarea id="note" name="note" rows="3" placeholder="Thời gian mong muốn, số lượng khách..."></textarea>
+          <textarea id="note" name="note" rows="3" placeholder="Thời gian mong muốn, số lượng khách..." required"></textarea>
         </div>
-        <button type="submit" class="btn btn--primary btn--lg btn--block">Gửi yêu cầu</button>
+		<button type="submit" class="btn btn--primary btn--lg btn--block">Gửi Yêu Cầu</button>
+
         <p class="form-hint" id="form-hint">Hoặc Gọi Trực Tiếp <a href="tel:0775856456">0775 856 456 </a>Để Đặt Xe Ngay. Xin Quí Khách Thông Cảm Vì Sự Bất Tiện Này. Xin Cảm Ơn Rất Nhiều!</p>
       </form>
     </div>
